@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!---->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+<form action="">
+	
+	<!--Этап №1-->
+	<h5>Этап №1</h5>
+	<p>Телефон: <input type="tel" name="phoneNumber" placeholder="+7 " value="+7 " id="phoneNumber" /></p>
+	<p>Email: <input type="email" name="email" id="email"></p>
+	<hr />
+	
+	<!--Этап №2-->
+	<h5>Этап №2</h5>
+	<p>Фамилия: <input type="text" name="last-name" id="lastName" /></p>
+	<p>Имя: <input type="text" name="first-name" id="firstName" /></p>
+	<p>Дата рождения: <input type="date" name="birthday" id="birthday" /></p>
+	<p>Сумма займа: <input type="text" name="loan_sum" id="loan_sum" /></p>
+	<hr />
+
+	<!--Этап №3-->
+	<h5>Этап №3</h5>
+	<p>Серия: <input type="tel" name="passportSeries" id="passportSeries" /></p>
+	<p>Номер: <input type="tel" name="passportNumber" id="passportNumber" /></p>
+	<p>Код подразделения: <input type="tel" name="passportDepCode" id="passportDepCode" /></p>
+	<p>Дата выдачи паспорта: <input type="date" name="passportDate" id="passportDate" /></p>
+	<p>Кем выдан: <input type="text" name="passportPoint" id="passportPoint" /></p>
+	<p>Место рождения: <input type="text" name="birthPlace" id="birthPlace" /></p>
+	<hr />
+	
+
+	<!--Этап №4-->
+	<h5>Этап №4</h5>
+	<p>Регион: <input type="text" name="region" id="regionRegister" /></p>
+	<p>Город: <input type="text" name="city" id="cityRegister" /></p>
+	<p>Улица: <input type="text" name="street" id="streetRegister" /></p>
+	<p>Дом: <input type="text" name="house" id="houseRegister" /></p>
+	<p>Квартира: <input type="text" name="flat" id="flatRegister" /></p>
+
+	<!--Капча-->
+	<div class="g-recaptcha" data-sitekey="6Ldwy8oZAAAAAPKehRAKI6ZoSTmg4xJQ9Ps_nPDE"></div>
+
+	<!--Кнопка отправки а сервер-->
+    <p><input type="submit" id="submit_button" onclick="return validateForm()"/></p>
+
+</form>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+form {
+  padding: 30px;
+  width: 300px;
+  border: solid 1px black;
+}
+
+input {
+  width: 100%;
+}
